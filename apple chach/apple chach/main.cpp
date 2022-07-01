@@ -388,7 +388,7 @@ void PlayerControl() {
 	//Xキーで減速
 	if (hen.g_KeyFlg & PAD_INPUT_B && g_player.speed > 1) g_player.speed -= 1;
 
-	//上下左右移動
+	//左右移動
 	if (g_player.flg == TRUE) {
 		if (hen.g_NowKey & PAD_INPUT_LEFT) g_player.x -= g_player.speed;
 		if (hen.g_NowKey & PAD_INPUT_RIGHT) g_player.x += g_player.speed;
